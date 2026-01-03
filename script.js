@@ -71,3 +71,28 @@ function removeProduct(index) {
 /* ---------- AUTO LOAD ---------- */
 loadCustomerProducts();
 loadAdminProducts();
+/* 🌗 THEME TOGGLE */
+function toggleTheme() {
+  document.body.classList.toggle("dark");
+
+  let mode = document.body.classList.contains("dark") ? "dark" : "light";
+  localStorage.setItem("theme", mode);
+
+  updateToggleIcon();
+}
+
+function updateToggleIcon() {
+  let btn = document.getElementById("themeToggle");
+  if (!btn) return;
+
+  btn.innerHTML = document.body.classList.contains("dark") ? "☀️ Light" : "🌙 Dark";
+}
+
+/* Load saved theme */
+let savedTheme = localStorage.getItem("theme");
+if (savedTheme === "dark") {
+  document.body.classList.add("dark");
+}
+
+updateToggleIcon();
+
