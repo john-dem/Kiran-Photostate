@@ -63,3 +63,52 @@ footer {
   padding: 10px;
   margin-top: 20px;
 }
+/* 🌗 DARK MODE */
+body.dark {
+  background: #121212;
+  color: #f1f1f1;
+}
+
+body.dark header {
+  background: #b71c1c;
+}
+
+body.dark nav {
+  background: #1f1f1f;
+}
+
+body.dark nav a {
+  color: #ffb3b3;
+}
+
+body.dark .product {
+  background: #1e1e1e;
+  border-color: #ff6b6b;
+}
+
+body.dark footer {
+  background: #1f1f1f;
+  color: #ccc;
+}
+
+/* Toggle Button */
+.toggle-btn {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  background: #fff;
+  color: #f44336;
+  border: 2px solid #f44336;
+  border-radius: 20px;
+  padding: 6px 12px;
+  cursor: pointer;
+  font-size: 14px;
+  z-index: 999;
+}
+
+body.dark .toggle-btn {
+  background: #333;
+  color: #fff;
+  border-color: #fff;
+}
+
