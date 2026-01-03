@@ -11,7 +11,7 @@ function addProduct() {
 
   let products = JSON.parse(localStorage.getItem("products")) || [];
   products.push({ name, price, desc });
-  localStorage.setItem("products", JSON.stringify(products"));
+  localStorage.setItem("products", JSON.stringify(products));
 
   alert("Product Added ✅");
   loadAdminProducts();
