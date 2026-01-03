@@ -1,4 +1,4 @@
-/* ---------- ADD PRODUCT ---------- */
+/* ---------- ADD PRODUCT ------- --- */
 function addProduct() {
   let name = document.getElementById("name").value;
   let price = document.getElementById("price").value;
